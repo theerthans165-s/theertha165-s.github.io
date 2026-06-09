@@ -1,99 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Theertha S Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theertha Portfolio</title>
+
 <style>
-body{
-    font-family: Arial, sans-serif;
+*{
     margin:0;
-    background:#f4f8ff;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-.header{
-    background:#2563eb;
+body{
+    background:#0a0f1f;
     color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:400px;
     text-align:center;
-    padding:50px 20px;
 }
 
-.section{
-    background:white;
-    margin:20px;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+.top-text{
+    color:#d8d8d8;
+    margin-bottom:25px;
+    line-height:1.4;
 }
 
-.skills span{
-    display:inline-block;
-    background:#dbeafe;
-    padding:10px 15px;
-    margin:5px;
-    border-radius:20px;
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:30px;
 }
 
-.footer{
-    background:#2563eb;
-    color:white;
-    text-align:center;
+.btn{
+    padding:14px 25px;
+    border:none;
+    border-radius:30px;
+    background:#5cffc8;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 0 20px #5cffc8;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border-radius:25px;
+    padding:30px 20px;
+    backdrop-filter:blur(10px);
+}
+
+.avatar{
+    width:100px;
+    height:100px;
+    margin:auto;
+    border-radius:50%;
+    border:3px solid #5cffc8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:45px;
+    color:#5cffc8;
+    margin-bottom:15px;
+}
+
+.role{
+    color:#5cffc8;
+    letter-spacing:4px;
+    margin-bottom:10px;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.description{
+    color:#ddd;
+    line-height:1.5;
+    margin-bottom:25px;
+}
+
+.info{
+    background:rgba(92,255,200,0.08);
     padding:15px;
-    margin-top:20px;
+    border-radius:20px;
+    margin:10px 0;
+    color:#5cffc8;
+    font-weight:bold;
+}
+
+.glow{
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 5px #5cffc8;
+    }
+    to{
+        text-shadow:0 0 20px #5cffc8;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>Theertha S</h1>
-    <p>Aspiring Software Engineer</p>
-</div>
+<div class="container">
 
-<div class="section">
-    <h2>About Me</h2>
-    <p>
-        Hello! I am Theertha. I am passionate about technology,
-        programming, and learning new skills. I enjoy creating
-        websites and exploring innovative ideas.
+    <p class="top-text">
+        Student and developer focused on clean interfaces,
+        strong front-end architecture and polished user experiences.
     </p>
-</div>
 
-<div class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Problem Solving</span>
-        <span>Creative Thinking</span>
+    <div class="buttons">
+        <button class="btn">Contact Me</button>
+        <button class="btn">View Timeline</button>
     </div>
-</div>
 
-<div class="section">
-    <h2>Projects</h2>
-    <ul>
-        <li>Personal Portfolio Website</li>
-        <li>Student Management Project</li>
-        <li>Simple Calculator</li>
-    </ul>
-</div>
+    <div class="card">
 
-<div class="section">
-    <h2>Education</h2>
-    <p>
-        Currently pursuing studies and continuously improving my
-        knowledge in software development and technology.
-    </p>
-</div>
+        <div class="avatar">T</div>
 
-<div class="section">
-    <h2>Contact</h2>
-    <p>Email: yourmail@example.com</p>
-    <p>GitHub: github.com/theerthans165-s</p>
-</div>
+        <div class="role glow">WEB DEVELOPER</div>
 
-<div class="footer">
-    © 2026 Theertha S | Portfolio
+        <h1 class="glow">Theertha</h1>
+
+        <p class="description">
+            I build modern, performant web experiences with a strong emphasis on clarity,
+            usability and clean engineering.
+        </p>
+
+        <div class="info">📧 yourmailtheerthans165@gmail.com</div>
+        <div class="info">📱 +918593073822</div>
+        <div class="info">🔗 LinkedIn</div>
+
+    </div>
+
 </div>
 
 </body>
