@@ -3,150 +3,211 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Theertha Portfolio</title>
+<title>Theertha ns Portfolio</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#0a0f1f;
+    background:#08111f;
     color:white;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
-.container{
-    width:90%;
-    max-width:400px;
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav a{
+    color:#5cffc8;
+    text-decoration:none;
+    font-weight:600;
+}
+
+section{
+    min-height:100vh;
+    padding:120px 10%;
+}
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
 }
 
-.top-text{
-    color:#d8d8d8;
-    margin-bottom:25px;
-    line-height:1.4;
+.hero h1{
+    font-size:70px;
+    color:#5cffc8;
+    text-shadow:0 0 20px #5cffc8;
 }
 
-.buttons{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:30px;
+.hero p{
+    max-width:700px;
+    margin-top:20px;
+    color:#ddd;
+    line-height:1.8;
 }
 
 .btn{
-    padding:14px 25px;
+    margin-top:30px;
+    padding:15px 30px;
     border:none;
     border-radius:30px;
     background:#5cffc8;
-    color:#000;
     font-weight:bold;
     cursor:pointer;
-    box-shadow:0 0 20px #5cffc8;
+}
+
+.title{
+    color:#5cffc8;
+    margin-bottom:30px;
+    font-size:40px;
 }
 
 .card{
     background:rgba(255,255,255,0.05);
-    border-radius:25px;
-    padding:30px 20px;
     backdrop-filter:blur(10px);
-}
-
-.avatar{
-    width:100px;
-    height:100px;
-    margin:auto;
-    border-radius:50%;
-    border:3px solid #5cffc8;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:45px;
-    color:#5cffc8;
-    margin-bottom:15px;
-}
-
-.role{
-    color:#5cffc8;
-    letter-spacing:4px;
-    margin-bottom:10px;
-}
-
-h1{
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.description{
-    color:#ddd;
-    line-height:1.5;
-    margin-bottom:25px;
-}
-
-.info{
-    background:rgba(92,255,200,0.08);
-    padding:15px;
     border-radius:20px;
-    margin:10px 0;
-    color:#5cffc8;
-    font-weight:bold;
+    padding:25px;
+    margin-bottom:20px;
 }
 
-.glow{
-    animation:glow 2s infinite alternate;
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
 }
 
-@keyframes glow{
-    from{
-        text-shadow:0 0 5px #5cffc8;
-    }
-    to{
-        text-shadow:0 0 20px #5cffc8;
-    }
+.skill{
+    text-align:center;
+    padding:20px;
+    background:rgba(92,255,200,0.08);
+    border-radius:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#050b15;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <p class="top-text">
-        Student and developer focused on clean interfaces,
-        strong front-end architecture and polished user experiences.
-    </p>
+<section id="home" class="hero">
+<h1>THEERTHA</h1>
+<p>
+Aspiring Software Engineer passionate about web development,
+technology, and creating user-friendly digital experiences.
+</p>
+<button class="btn">Explore Portfolio</button>
+</section>
 
-    <div class="buttons">
-        <button class="btn">Contact Me</button>
-        <button class="btn">View Timeline</button>
-    </div>
-
-    <div class="card">
-
-        <div class="avatar">T</div>
-
-        <div class="role glow">WEB DEVELOPER</div>
-
-        <h1 class="glow">Theertha</h1>
-
-        <p class="description">
-            I build modern, performant web experiences with a strong emphasis on clarity,
-            usability and clean engineering.
-        </p>
-
-        <div class="info">📧 yourmailtheerthans165@gmail.com</div>
-        <div class="info">📱 +918593073822</div>
-        <div class="info">🔗 LinkedIn</div>
-
-    </div>
-
+<section id="about">
+<h2 class="title">About Me</h2>
+<div class="card">
+<p>
+Hello! I'm Theertha, a passionate B.Tech student with a strong
+interest in web development, UI/UX design, and modern technologies.
+I enjoy learning new skills, building projects, and solving
+real-world problems through technology. My goal is to become a
+skilled software engineer and contribute to innovative solutions
+that make a positive impact.
+</p>
 </div>
+</section>
+
+<section id="skills">
+<h2 class="title">My Skills</h2>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div
+<div class="skill">Python</div>
+<div class="skill">C Programming</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">UI/UX Design</div>
+<div class="skill">Problem Solving</div>
+</div>
+</section>
+
+<section id="education">
+<h2 class="title">B.Tech Education</h2>
+
+<div class="card">
+<h3>Bachelor of Technology (B.Tech)</h3>
+<br>
+<p>
+Currently pursuing my B.Tech degree with a focus on developing
+strong technical knowledge and practical skills in software
+development and engineering concepts. Throughout my academic
+journey, I have worked on programming, web technologies,
+problem-solving, and project-based learning. My education has
+helped me build analytical thinking and a strong foundation for a
+career in technology.
+</p>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="title">Projects</h2>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Personal responsive portfolio built using HTML, CSS, and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Student Management System</h3>
+<p>A simple application for managing student records and details.</p>
+</div>
+
+<div class="card">
+<h3>Future Projects</h3>
+<p>More exciting projects coming soon...</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact Me</h2>
+
+<div class="card">
+<p>📧 theerthans165@email.com</p>
+<p>📱 +91 8593073822</p>
+<p>🌐 github.com/theertha</p>
+</div>
+</section>
+
+<footer>
+© 2026 Theertha | All Rights Reserved
+</footer>
 
 </body>
 </html>
